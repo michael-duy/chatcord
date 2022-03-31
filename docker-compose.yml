@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  node-service:
+    build: .
+    container_name: node-container
+    volumes:
+      - .:/user/wwww
+      - /user/wwww/node_modules
+    restart: unless-stopped
+    ports:
+      - '3000:3000'
+    environment:
+      - HOST=3000
