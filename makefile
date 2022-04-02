@@ -10,5 +10,3 @@ logs:
 	docker-compose logs -f -t
 node-bash:
 	docker exec -it node-container sh
-logs:
-	docker-compose logs -f -t
